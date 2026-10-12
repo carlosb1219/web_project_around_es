@@ -36,14 +36,16 @@ const inputName = profilePopup.querySelector(".popup__input_type_name");
 const inputDescription = profilePopup.querySelector(
   ".popup__input_type_description",
 );
+const profileName = document.querySelector(".profile__title");
+const profileDescription = document.querySelector(".profile__description");
 
 function openModal(modal) {
   modal.classList.add("popup_is-opened");
 }
 
 function fillProfileForm() {
-  inputName.value = "Jaques Cousteau";
-  inputDescription.value = "Explorador";
+  inputName.value = profileName.textContent;
+  inputDescription.value = profileDescription.textContent;
 }
 
 function handleOpenEditModal(modal) {
@@ -71,9 +73,6 @@ function handleProfileFormSubmit(evt) {
 
   let nameValue = nameInput.value;
   let descriptionValue = jobInput.value;
-
-  const profileName = document.querySelector(".profile__title");
-  const profileDescription = document.querySelector(".profile__description");
 
   profileName.textContent = nameValue;
   profileDescription.textContent = descriptionValue;
