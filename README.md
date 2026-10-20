@@ -5,4 +5,6 @@ Ya es la segunda entrega del proyecto, del sprint 6 donde se agrega la funcional
 
 Ya es la tercera parte del proyecto del sprint 6, en esta se agregó la interactividad faltante, guardar tarjetas nuevas, activar los botones de me gusta y de eliminar, abrir las imagenes en grande con todas las funcionalidades requeridas.
 
-Link: https://github.com/carlosb1219/web_project_around_es.git
+En este proyecto se utilizó JAVSCRIPT, HTML Y CSS principalmente.
+
+Link: https://carlosb1219.github.io/web_project_around_es/

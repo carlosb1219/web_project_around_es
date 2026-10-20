@@ -42,7 +42,6 @@ const addCardBtn = document.querySelector(".profile__add-button");
 const newCardPopup = document.querySelector("#new-card-popup");
 const newCardForm = document.querySelector("#new-card-form");
 const newCardCloseBtn = newCardPopup.querySelector(".popup__close");
-const addCardSubmitBtn = newCardForm.querySelector(".popup__submit-button");
 const imagePopupCloseBtn = document.querySelector("#image-popup .popup__close");
 const imagePopup = document.querySelector("#image-popup");
 const imagePopupImage = imagePopup.querySelector(".popup__image");
@@ -72,16 +71,16 @@ function closeModal(modal) {
 
 profilePopupCloseBtn.addEventListener("click", () => closeModal(profilePopup));
 
-let formElement = profilePopup.querySelector(".popup__form");
+const formElement = profilePopup.querySelector(".popup__form");
 
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
 
-  let nameInput = profilePopup.querySelector(".popup__input_type_name");
-  let jobInput = profilePopup.querySelector(".popup__input_type_description");
+  const nameInput = profilePopup.querySelector(".popup__input_type_name");
+  const jobInput = profilePopup.querySelector(".popup__input_type_description");
 
-  let nameValue = nameInput.value;
-  let descriptionValue = jobInput.value;
+  const nameValue = nameInput.value;
+  const descriptionValue = jobInput.value;
 
   profileName.textContent = nameValue;
   profileDescription.textContent = descriptionValue;
@@ -124,8 +123,8 @@ function getCardElement({
   return cardElement;
 }
 
-function renderCard(datos) {
-  const cardElement = getCardElement(datos);
+function renderCard(cardData) {
+  const cardElement = getCardElement(cardData);
   cardsContainer.prepend(cardElement);
 }
 
